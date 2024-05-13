@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ress/css/style.css">
+    <link rel="stylesheet" href="ress/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bala Project
+    </title>
+</head>
+<body>
+     /*<style> * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url();
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Header */
+    #header {
+        
+        background-color: #333;
+        color: #0d0c0c;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    /* Inventory Form */
+    #invent-form {
+        padding: 20px;
+    }
+    
+    .invent {
+        background-color: #e22f2f;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .invent h4 {
+        margin-bottom: 5px;
+    }
+    
+    .invent input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        border: 1px solid #0c0c0c;
+    }
+    
+    .invent .text-center {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .invent button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .invent button:hover {
+        background-color: #555;
+    }
+    
+    /* Inventory Table */
+    #invent-table {
+        padding: 20px;
+    }
+    
+    .table {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .d-flex-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .table-responsive {
+        overflow-x: auto;
+    }
+    
+    #inventoryTable {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    #inventoryTable th,
+    #inventoryTable td {
+        padding: 10px;
+        border: 1px solid #000000;
+        text-align: left;
+    }
+    
+    #inventoryTable th {
+        background-color: #07ceed;
+    }
+    
+    #inventoryTable tr:nth-child(even) {
+        background-color: #a71616;
+    }
+    
+    /* Footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }</style> 
+
+    <section id="header">
+    <h1>BALA STORES and HYPER MARKET</h1>
+    </section>
+
+    <section id="invent-form">
+        <div class="invent">
+            <div class="d-flex" >
+                <div>
+                    <h4>Products</h4>
+                    <input type="text" placeholder="product" id="product">
+                </div>
+                <div>
+                    <h4>Price</h4>
+                    <input type="text" value="0" placeholder="price" id="price" onchange="getTotal()"> 
+                </div>
+            </div>
+            <div class="d-flex">
+                <div>
+                    <h4>Quantity</h4>
+                    <input type="text" value="0" placeholder="quantity" id="quantity" onchange="getTotal()">
+                </div>
+                <div>
+                    <h4>Total</h4>
+                    <input type="text" placeholder="0" readonly value="0" id="total">
+                </div>
+            </div>
+            <div class="text-center">
+                <button onclick="addInventory()">Add Record</button>
+            </div> 
+        </div>
+    </section>
+
+    <section id="invent-table">
+        <div class="table" >
+            <div class="d-flex-between">
+                <div>
+                    <h1>Stores</h1>
+                </div>
+                <div>
+                    <button class="clear" onclick="clearButton()">Clear Inventory</button>
+                    <button class="print" onclick="printData()">Print/Download</button>
+                </div>
+            </div>
+            
+            <div class="table-responsive" id="allInventory">
+                <table width="100%" border="1" id="inventoryTable">
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th >Take Action</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            Grand Total
+                        </th>
+                        <td id="grandTotal" colspan="2" class="font-weight-bold"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer >
+        &copy; BALA STORES | All Right Reserved <br>
+        Designed and Developed by BALA MCA <br>
+    </footer>
+
+    <script src="ress/js/script.js"></script>
+
+    
+</body>
+</html> 
+
+
